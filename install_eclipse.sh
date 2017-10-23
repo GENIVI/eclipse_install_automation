@@ -27,7 +27,7 @@ fi
 
 mkdir -p "$ECLIPSE_INSTALL_DIR" || die "Can't create target dir ($ECLIPSE_INSTALL_DIR)"
 
-if [ -d "$ECLIPSE_WORKSPACE_DIR" ] ; then
+if [ $(/bin/ls "$ECLIPSE_WORKSPACE_DIR" 2>/dev/null | wc -l) -ne 0 ] ; then
    if [ -z "$VAGRANT" ] ; then  # No need to warn in vagrant case
       echo
       echo "NOTE the workspace dir in CONFIG exists ($ECLIPSE_WORKSPACE_DIR)!"
