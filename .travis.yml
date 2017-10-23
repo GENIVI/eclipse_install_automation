@@ -1,0 +1,25 @@
+# do not use container-based infrastructure
+sudo: false
+
+# currently we use Java 7 (on master)
+language: java
+jdk: openjdk7
+
+# activate caching to speed up build
+cache:
+  directories:
+  - downloads/
+
+env: 
+- ECLIPSE_INSTALL_DIR=$HOME/eclipse_travis ECLIPSE_WORKSPACE_DIR=$HOME/workspace_travis
+
+# run actual build (only script without Vagrant/VirtualBox)
+script:
+- bash script.sh
+
+# select branches per whitelist
+branches:
+  only:
+  - master
+  - cpp_common_api_with_yocto_tools
+  - ionas
