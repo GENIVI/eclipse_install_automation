@@ -1,7 +1,7 @@
 | Branch                              | Build Status   | Comments  |
 | :---------------------------------- | :------------- | :-------- |
-| **cpp_common_api_with_yocto_tools** | [![Build Status](https://travis-ci.org/GENIVI/eclipse_install_automation.svg?branch=cpp_common_api_with_yocto_tools)](https://travis-ci.org/GENIVI/eclipse_install_automation) | (recommended branch) |
-| **master**                          | [![Build Status](https://travis-ci.org/GENIVI/eclipse_install_automation.svg?branch=master)](https://travis-ci.org/GENIVI/eclipse_install_automation) | (varying status - see below) |
+| **cpp_common_api_with_yocto_tools** | [![Build Status](https://travis-ci.org/GENIVI/eclipse_install_automation.svg?branch=cpp_common_api_with_yocto_tools)](https://travis-ci.org/GENIVI/eclipse_install_automation) | Franca 0.9 and all Common API C++ Tools (recommended branch) |
+| **master**                          | [![Build Status](https://travis-ci.org/GENIVI/eclipse_install_automation.svg?branch=master)](https://travis-ci.org/GENIVI/eclipse_install_automation) | Latest Franca (is the intention, might need update) |
 | **ionas**                           | (No CI at the moment)  | AUTOSAR conversion tools. Unmaintained - feel free to investigate |
 | *others*                            | (No CI at the moment)  | Work in progress |
 
