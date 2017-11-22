@@ -73,11 +73,13 @@ DOWNLOAD_DIR=$(absolute_path "$DOWNLOAD_DIR")
 # PACKAGE INSTALLATION (varies between installed variant / git branches)
 # --------------------------------------------------------------------------
 
+install COMMON_API_CORE
+install COMMON_API_DBUS
+install COMMON_API_SOMEIP
 install DBUS_EMF
 install FRANCA
 install RSE
 install CDT
-install COMMON_API_CPP
 install PTP
 install AUTOTOOLS
 install TRACE_COMPASS

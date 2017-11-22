@@ -132,20 +132,40 @@ AUTOTOOLS_FEATURES=\
 org.eclipse.cdt.autotools.core,\
 org.eclipse.cdt.autotools.ui
 
-# COMMON API (C++) FOR IPC
-COMMON_API_CPP_VERSION="3.1.3"
-COMMON_API_CPP_SERVER="http://docs.projects.genivi.org/yamaica-update-site/CommonAPI/updatesite"
-COMMON_API_CPP_UPDATE_SITE_URL="$COMMON_API_CPP_SERVER/3.1/$COMMON_API_CPP_VERSION"
-COMMON_API_CPP_FEATURES=\
+# COMMON API (C++, CORE)) FOR IPC
+# Optionally set a version here -- for the moment an empty
+# setting means "latest" is being deployed.
+#COMMON_API_CORE_VERSION="3.1.12"
+COMMON_API_CORE_SERVER="http://genivi.github.io/capicxx-core-tools/updatesite/"
+COMMON_API_CORE_UPDATE_SITE_URL="$COMMON_API_CORE_SERVER/$COMMON_API_CORE_VERSION"
+COMMON_API_CORE_FEATURES=\
 org.genivi.commonapi.core,\
 org.genivi.commonapi.core.ui,\
-org.genivi.commonapi.core.validator,\
+org.genivi.commonapi.core.validator
+
+# COMMON API (C++, DBUS) FOR IPC
+# Optionally set a version here -- for the moment an empty
+# setting means "latest" is being deployed.
+#COMMON_API_DBUS_VERSION="3.1.12"
+COMMON_API_DBUS_SERVER="http://genivi.github.io/capicxx-dbus-tools/updatesite/"
+COMMON_API_DBUS_UPDATE_SITE_URL="$COMMON_API_DBUS_SERVER/$COMMON_API_DBUS_VERSION"
+COMMON_API_DBUS_FEATURES=\
 org.genivi.commonapi.dbus,\
 org.genivi.commonapi.dbus.ui,\
-org.genivi.commonapi.dbus.validator,\
+org.genivi.commonapi.dbus.validator
+
+# COMMON API (C++, SOME/IP)
+# Optionally set a version here -- for the moment an empty
+# setting means "latest" is being deployed.
+#COMMON_API_SOMEIP_VERSION="3.1.12"
+COMMON_API_SOMEIP_VERSION=""
+COMMON_API_SOMEIP_SERVER="http://genivi.github.io/capicxx-someip-tools/updatesite/"
+COMMON_API_SOMEIP_UPDATE_SITE_URL="$COMMON_API_SOMEIP_SERVER/$COMMON_API_SOMEIP_VERSION"
+COMMON_API_SOMEIP_FEATURES=\
 org.genivi.commonapi.someip,\
 org.genivi.commonapi.someip.ui,\
 org.genivi.commonapi.someip.validator,\
+org.genivi.commonapi.someip.deployment.validator
 
 TM_TERMINAL_VERSION="3.7"
 #TM_TERMINAL_UPDATE_SITE_URL="http://download.eclipse.org/tm/terminal/updates/4.0/GA/"
@@ -159,7 +179,6 @@ TRACE_COMPASS_VERSION=1.2.1
 TRACE_COMPASS_UPDATE_SITE_URL="http://download.eclipse.org/tracecompass/releases/$TRACE_COMPASS_VERSION/repository/"
 TRACE_COMPASS_FEATURES=\
 org.eclipse.tracecompass.tmf.core
-
 
 RSE_UPDATE_SITE_URL="http://download.eclipse.org/tm/updates/$TM_TERMINAL_VERSION"
 RSE_FEATURES=\
