@@ -8,7 +8,9 @@
 Automated Eclipse/Franca environment installation
 =================================================
 
-Scripts related to [Franca IDL](https://github.com/franca/franca) installation.
+Scripts related to automating eclipse package installation, originally
+used to set up Franca IDL](https://github.com/franca/franca) environment
+but could be modified for other purposes.
 
 VM or bare metal?
 -----------------

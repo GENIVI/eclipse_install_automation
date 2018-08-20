@@ -1,7 +1,8 @@
 #!/bin/bash
 # (C) 2014 Gunnar Andersson
 # License: MPLv2 - see project dir
-# Git repository: https://github.com/gunnarx/franca_install_automation
+# Git repository: https://github.com/GENIVI/eclipse_install_automation
+#                (https://github.com/gunnarx/franca_install_automation)
 # pull requests welcome
 
 # --------------------------------------------------------------------------
