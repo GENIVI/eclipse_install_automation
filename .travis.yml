@@ -18,6 +18,9 @@ env:
 script:
 - bash script.sh
 
+after_failure:
+- for f in /home/travis/tools/autoeclipse/eclipse/configuration/*.log ; do echo "-=-=-=-=-  $f -=-=-=-=-" ; cat "$f" ; done
+
 # select branches per whitelist
 branches:
   only:
