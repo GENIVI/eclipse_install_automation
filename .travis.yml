@@ -12,6 +12,7 @@ cache:
 
 env: 
 - ECLIPSE_INSTALL_DIR=$HOME/eclipse_travis ECLIPSE_WORKSPACE_DIR=$HOME/workspace_travis
+- EXIT_ON_FAILURE=true
 
 # run actual build (only script without Vagrant/VirtualBox)
 script:
